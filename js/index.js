@@ -153,6 +153,21 @@ function renderPrice() {
     priceGlutenFreeCrust = "";
   }
 
+  //DRY alternative:
+  // for (let ingredientItem in ingredients) {
+
+  //   if (state[ingredientItem]){
+
+  //     totalPrice += ingredients[ingredientItem].price;
+
+  //     ul.innerHTML += `<li> $ ${ingredients[ingredientItem].price} ${ingredients[ingredientItem].name} </li>`;
+
+  //   }
+
+  //   document.querySelector('aside.panel.price>strong').innerHTML = '$' + totalPrice;
+
+  // }
+
   ul.innerHTML =
     pricePepperoni +
     priceMushrooms +
